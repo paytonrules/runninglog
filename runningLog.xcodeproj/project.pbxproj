@@ -15,7 +15,7 @@
 		07ED175C15330DF000E4C9A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07ED175B15330DF000E4C9A0 /* AppDelegate.m */; };
 		07ED175F15330DF000E4C9A0 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07ED175D15330DF000E4C9A0 /* MainStoryboard_iPhone.storyboard */; };
 		07ED176215330DF000E4C9A0 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07ED176015330DF000E4C9A0 /* MainStoryboard_iPad.storyboard */; };
-		07ED176515330DF000E4C9A0 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07ED176415330DF000E4C9A0 /* FirstViewController.m */; };
+		07ED176515330DF000E4C9A0 /* LogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07ED176415330DF000E4C9A0 /* LogViewController.m */; };
 		07ED176715330DF000E4C9A0 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 07ED176615330DF000E4C9A0 /* first.png */; };
 		07ED176915330DF000E4C9A0 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07ED176815330DF000E4C9A0 /* first@2x.png */; };
 		07ED176C15330DF000E4C9A0 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07ED176B15330DF000E4C9A0 /* SecondViewController.m */; };
@@ -37,6 +37,7 @@
 		07ED17AA15330DFE00E4C9A0 /* unitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 07ED17A915330DFE00E4C9A0 /* unitTestMain.m */; };
 		07ED17AC15330DFE00E4C9A0 /* RunIPhoneUnitTest.sh in Resources */ = {isa = PBXBuildFile; fileRef = 07ED17AB15330DFE00E4C9A0 /* RunIPhoneUnitTest.sh */; };
 		07ED17AE15330DFE00E4C9A0 /* iPhone-Prefix.pch in Resources */ = {isa = PBXBuildFile; fileRef = 07ED17AD15330DFE00E4C9A0 /* iPhone-Prefix.pch */; };
+		07ED17B4153316D100E4C9A0 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07ED175D15330DF000E4C9A0 /* MainStoryboard_iPhone.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,8 +63,8 @@
 		07ED175B15330DF000E4C9A0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		07ED175E15330DF000E4C9A0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		07ED176115330DF000E4C9A0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		07ED176315330DF000E4C9A0 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		07ED176415330DF000E4C9A0 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		07ED176315330DF000E4C9A0 /* LogViewController.h */ = {isa = PBXFileReference; path = LogViewController.h; sourceTree = "<group>"; };
+		07ED176415330DF000E4C9A0 /* LogViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogViewController.m; sourceTree = "<group>"; };
 		07ED176615330DF000E4C9A0 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		07ED176815330DF000E4C9A0 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
 		07ED176A15330DF000E4C9A0 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
@@ -161,8 +162,8 @@
 				07ED175B15330DF000E4C9A0 /* AppDelegate.m */,
 				07ED175D15330DF000E4C9A0 /* MainStoryboard_iPhone.storyboard */,
 				07ED176015330DF000E4C9A0 /* MainStoryboard_iPad.storyboard */,
-				07ED176315330DF000E4C9A0 /* FirstViewController.h */,
-				07ED176415330DF000E4C9A0 /* FirstViewController.m */,
+				07ED176315330DF000E4C9A0 /* LogViewController.h */,
+				07ED176415330DF000E4C9A0 /* LogViewController.m */,
 				07ED176615330DF000E4C9A0 /* first.png */,
 				07ED176815330DF000E4C9A0 /* first@2x.png */,
 				07ED176A15330DF000E4C9A0 /* SecondViewController.h */,
@@ -347,6 +348,7 @@
 			files = (
 				07ED17AC15330DFE00E4C9A0 /* RunIPhoneUnitTest.sh in Resources */,
 				07ED17AE15330DFE00E4C9A0 /* iPhone-Prefix.pch in Resources */,
+				07ED17B4153316D100E4C9A0 /* MainStoryboard_iPhone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,7 +377,7 @@
 			files = (
 				07ED175815330DF000E4C9A0 /* main.m in Sources */,
 				07ED175C15330DF000E4C9A0 /* AppDelegate.m in Sources */,
-				07ED176515330DF000E4C9A0 /* FirstViewController.m in Sources */,
+				07ED176515330DF000E4C9A0 /* LogViewController.m in Sources */,
 				07ED176C15330DF000E4C9A0 /* SecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

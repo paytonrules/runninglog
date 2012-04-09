@@ -6,13 +6,13 @@
 //  Copyright (c) 2012 8th Light. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "LogViewController.h"
 
-@interface FirstViewController ()
+@interface LogViewController ()
 
 @end
 
-@implementation FirstViewController
+@implementation LogViewController
 
 - (void)viewDidLoad
 {
