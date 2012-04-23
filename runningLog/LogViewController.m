@@ -1,11 +1,3 @@
-//
-//  FirstViewController.m
-//  runningLog
-//
-//  Created by Eric Smith on 4/9/12.
-//  Copyright (c) 2012 8th Light. All rights reserved.
-//
-
 #import "LogViewController.h"
 
 @interface LogViewController ()
@@ -13,26 +5,39 @@
 @end
 
 @implementation LogViewController
+@synthesize logEntry, logEntries;
 
-- (void)viewDidLoad
+-(id) init
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+  if (self = [super init])
+  {
+    logEntries = [NSMutableArray array];
+  }
+
+  return self;
 }
 
-- (void)viewDidUnload
+-(BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
+  if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
+  {
+    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+  } else
+  {
+    return YES;
+  }
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+-(IBAction) addLog
 {
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-    } else {
-        return YES;
-    }
+  [logEntries addObject:logEntry.text];
 }
+
+-(BOOL) textFieldShouldReturn:(UITextField *)logEntryField
+{
+  [logEntryField resignFirstResponder];
+  return YES;
+}
+
 
 @end
