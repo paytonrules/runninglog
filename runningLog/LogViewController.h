@@ -1,6 +1,6 @@
 #import <UIKit/UIKit.h>
 
-@interface LogViewController : UIViewController
+@interface LogViewController : UIViewController<UITableViewDataSource>
 {
   IBOutlet UITextField *logEntry;
   IBOutlet NSMutableArray *logEntries;

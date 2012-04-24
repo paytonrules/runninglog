@@ -52,7 +52,7 @@ CONTEXT(LogViewController) {
 
             [cont addLog];
 
-            [expect(cont.logEntries) toBeEqualTo:logEntries];
+            [expect([NSNumber numberWithInt:[cont tableView: nil numberOfRowsInSection:0]]) toBeEqualTo:[NSNumber numberWithInt:1]];
           }),
 
           it(@"closes the keypad", ^{
