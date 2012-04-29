@@ -4,17 +4,12 @@
 
 @end
 
-@implementation LogViewController
-@synthesize logEntry, logEntries;
+@implementation LogViewController   
+@synthesize logEntry;
 
--(id) init
+-(void) viewDidLoad
 {
-  if (self = [super init])
-  {
-    logEntries = [NSMutableArray array];
-  }
-
-  return self;
+  logEntries = [NSMutableArray array];
 }
 
 -(BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -22,7 +17,8 @@
   if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
   {
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-  } else
+  }
+  else
   {
     return YES;
   }
@@ -41,14 +37,15 @@
 
 -(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-  return 0;
+  return logEntries.count;
 
 }
 
 -(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-  return nil;
-
+  UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"LogEntry"];
+  cell.textLabel.text = [logEntries objectAtIndex:indexPath.row];
+  return cell;
 }
 
 

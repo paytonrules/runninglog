@@ -7,9 +7,7 @@
 }
 
 @property(nonatomic, retain) UITextField *logEntry;
-@property(nonatomic, readonly) NSArray *logEntries;
 
--(id) init;
 -(IBAction) addLog;
 -(BOOL) textFieldShouldReturn:(UITextField *)logEntryField;
 @end

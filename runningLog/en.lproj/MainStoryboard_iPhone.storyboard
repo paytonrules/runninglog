@@ -35,7 +35,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="addLog" destination="2" eventType="touchUpInside" id="Rt1-zT-2ae"/>
+                                    <action selector="addLog" destination="2" eventType="touchUpInside" id="emT-Yl-U79"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="sHf-Md-hBo">
@@ -59,7 +59,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="7"/>
                     <connections>
-                        <outlet property="logEntry" destination="sHf-Md-hBo" id="IvW-1d-AiN"/>
+                        <outlet property="logEntry" destination="sHf-Md-hBo" id="8S8-Ja-IxI"/>
                     </connections>
                 </viewController>
             </objects>
@@ -119,6 +119,9 @@
                 <relationship kind="outlet" name="logEntries" candidateClass="NSMutableArray"/>
                 <relationship kind="outlet" name="logEntry" candidateClass="UITextField"/>
             </relationships>
+        </class>
+        <class className="NSMutableArray" superclassName="NSArray">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSMutableArray.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
