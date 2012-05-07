@@ -3,3 +3,4 @@ build/
 .idea/
 runningLog.xcodeproj/project.xcworkspace/xcuserdata
 runningLog.xcodeproj/xcuserdata/
+.DS_Store

@@ -45,6 +45,14 @@
     }
 }
 
+-(void) toExist
+{
+    if (!actualObject)
+        [OCDSpecFail fail:@"Object was expected to exist, but didn't"
+                   atLine: line
+                   inFile: file];
+}
+
 -(void) fail:(NSString *)errorFormat with:(id)expectedObject
 {
     [OCDSpecFail fail:[NSString stringWithFormat:errorFormat, actualObject, expectedObject]
