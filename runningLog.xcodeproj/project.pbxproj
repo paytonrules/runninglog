@@ -40,6 +40,9 @@
 		07ED17B4153316D100E4C9A0 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07ED175D15330DF000E4C9A0 /* MainStoryboard_iPhone.storyboard */; };
 		07ED17CA15331A8500E4C9A0 /* LogViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07ED17C915331A8500E4C9A0 /* LogViewControllerSpec.m */; };
 		07ED17CC1533544100E4C9A0 /* LogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07ED176415330DF000E4C9A0 /* LogViewController.m */; };
+		07FE1C5E15578D72003C853C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07ED175B15330DF000E4C9A0 /* AppDelegate.m */; };
+		07FE1C6015580456003C853C /* AddLogView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07FE1C5F15580456003C853C /* AddLogView.xib */; };
+		07FE1C62155804A2003C853C /* ListRunsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07FE1C61155804A2003C853C /* ListRunsView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +106,8 @@
 		07ED17AB15330DFE00E4C9A0 /* RunIPhoneUnitTest.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = RunIPhoneUnitTest.sh; path = OCDSpec/OCDSpec/Programs/RunIPhoneUnitTest.sh; sourceTree = "<group>"; };
 		07ED17AD15330DFE00E4C9A0 /* iPhone-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "iPhone-Prefix.pch"; path = "OCDSpec/OCDSpec/iPhone-Prefix.pch"; sourceTree = "<group>"; };
 		07ED17C915331A8500E4C9A0 /* LogViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogViewControllerSpec.m; sourceTree = "<group>"; };
+		07FE1C5F15580456003C853C /* AddLogView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddLogView.xib; sourceTree = "<group>"; };
+		07FE1C61155804A2003C853C /* ListRunsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListRunsView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +179,8 @@
 				07ED176D15330DF000E4C9A0 /* second.png */,
 				07ED176F15330DF000E4C9A0 /* second@2x.png */,
 				07ED175215330DF000E4C9A0 /* Supporting Files */,
+				07FE1C5F15580456003C853C /* AddLogView.xib */,
+				07FE1C61155804A2003C853C /* ListRunsView.xib */,
 			);
 			path = runningLog;
 			sourceTree = "<group>";
@@ -343,6 +350,8 @@
 				07ED176915330DF000E4C9A0 /* first@2x.png in Resources */,
 				07ED176E15330DF000E4C9A0 /* second.png in Resources */,
 				07ED177015330DF000E4C9A0 /* second@2x.png in Resources */,
+				07FE1C6015580456003C853C /* AddLogView.xib in Resources */,
+				07FE1C62155804A2003C853C /* ListRunsView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +412,7 @@
 				07ED17AA15330DFE00E4C9A0 /* unitTestMain.m in Sources */,
 				07ED17CA15331A8500E4C9A0 /* LogViewControllerSpec.m in Sources */,
 				07ED17CC1533544100E4C9A0 /* LogViewController.m in Sources */,
+				07FE1C5E15578D72003C853C /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
