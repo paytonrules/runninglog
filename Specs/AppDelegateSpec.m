@@ -1,6 +1,7 @@
 #import "OCDSpec/OCDSpec.h"
 #import "AppDelegate.h"
 #import "LogRunController.h"
+#import "ListRunsController.h"
  
 CONTEXT(AppDelegate)
 {
@@ -19,7 +20,7 @@ CONTEXT(AppDelegate)
                     [expect(cont.nibName) toBeEqualTo:@"AddLogView"];
                 }),
              
-             it(@"adds the log view contraoll again, this time initialized with the List runs view",
+             it(@"adds a listRuns controller to the root view controller",
                 ^{
                     AppDelegate *delegate = [[AppDelegate alloc] init ];
                     delegate.window = [[UIWindow alloc] init];
@@ -28,7 +29,7 @@ CONTEXT(AppDelegate)
                     
                     [delegate application:nil didFinishLaunchingWithOptions:nil];
                     
-                    LogRunController *cont = [tabController.viewControllers objectAtIndex:1];
+                    ListRunsController *cont = [tabController.viewControllers objectAtIndex:1];
                     
                     [expect(cont.nibName) toBeEqualTo:@"ListRunsView"];    
                     

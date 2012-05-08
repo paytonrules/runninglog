@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		077F00C815594EF500C7CCC4 /* LogRunView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07FE1C5F15580456003C853C /* LogRunView.xib */; };
+		077F00CB1559E45000C7CCC4 /* ListRunsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 077F00CA1559E45000C7CCC4 /* ListRunsController.m */; };
+		077F00CC1559E45000C7CCC4 /* ListRunsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 077F00CA1559E45000C7CCC4 /* ListRunsController.m */; };
 		07ED174C15330DF000E4C9A0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07ED174B15330DF000E4C9A0 /* UIKit.framework */; };
 		07ED174E15330DF000E4C9A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07ED174D15330DF000E4C9A0 /* Foundation.framework */; };
 		07ED175015330DF000E4C9A0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07ED174F15330DF000E4C9A0 /* CoreGraphics.framework */; };
@@ -58,6 +60,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		077F00C91559E45000C7CCC4 /* ListRunsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListRunsController.h; sourceTree = "<group>"; };
+		077F00CA1559E45000C7CCC4 /* ListRunsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListRunsController.m; sourceTree = "<group>"; };
 		07ED174715330DF000E4C9A0 /* runningLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = runningLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07ED174B15330DF000E4C9A0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		07ED174D15330DF000E4C9A0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -70,7 +74,7 @@
 		07ED175B15330DF000E4C9A0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		07ED175E15330DF000E4C9A0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		07ED176115330DF000E4C9A0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		07ED176315330DF000E4C9A0 /* LogRunController.h */ = {isa = PBXFileReference; path = LogRunController.h; sourceTree = "<group>"; };
+		07ED176315330DF000E4C9A0 /* LogRunController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogRunController.h; sourceTree = "<group>"; };
 		07ED176415330DF000E4C9A0 /* LogRunController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogRunController.m; sourceTree = "<group>"; };
 		07ED176615330DF000E4C9A0 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		07ED176815330DF000E4C9A0 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
@@ -184,6 +188,8 @@
 				07ED175215330DF000E4C9A0 /* Supporting Files */,
 				07FE1C5F15580456003C853C /* LogRunView.xib */,
 				07FE1C61155804A2003C853C /* ListRunsView.xib */,
+				077F00C91559E45000C7CCC4 /* ListRunsController.h */,
+				077F00CA1559E45000C7CCC4 /* ListRunsController.m */,
 			);
 			path = runningLog;
 			sourceTree = "<group>";
@@ -397,6 +403,7 @@
 				07ED175C15330DF000E4C9A0 /* AppDelegate.m in Sources */,
 				07ED176515330DF000E4C9A0 /* LogRunController.m in Sources */,
 				07ED176C15330DF000E4C9A0 /* SecondViewController.m in Sources */,
+				077F00CB1559E45000C7CCC4 /* ListRunsController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +426,7 @@
 				07ED17CC1533544100E4C9A0 /* LogRunController.m in Sources */,
 				07FE1C5E15578D72003C853C /* AppDelegate.m in Sources */,
 				07FE1C6615580F65003C853C /* AppDelegateSpec.m in Sources */,
+				077F00CC1559E45000C7CCC4 /* ListRunsController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

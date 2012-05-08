@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "LogRunController.h"
+#import "ListRunsController.h"
 
 @implementation AppDelegate
 
@@ -17,7 +18,7 @@
 {
     UITabBarController *myTabBarController = (UITabBarController *)_window.rootViewController;
     LogRunController *addRunController = [[LogRunController alloc] initWithNibName:@"AddLogView" bundle:nil];
-    LogRunController *listRunsController = [[LogRunController alloc] initWithNibName:@"ListRunsView" bundle:nil];
+    ListRunsController *listRunsController = [[ListRunsController alloc] initWithNibName:@"ListRunsView" bundle:nil];
 
     myTabBarController.viewControllers = [NSArray arrayWithObjects:addRunController, listRunsController, nil];
    
