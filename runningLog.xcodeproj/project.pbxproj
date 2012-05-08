@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		077F00C815594EF500C7CCC4 /* AddLogView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07FE1C5F15580456003C853C /* AddLogView.xib */; };
+		077F00C815594EF500C7CCC4 /* LogRunView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07FE1C5F15580456003C853C /* LogRunView.xib */; };
 		07ED174C15330DF000E4C9A0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07ED174B15330DF000E4C9A0 /* UIKit.framework */; };
 		07ED174E15330DF000E4C9A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07ED174D15330DF000E4C9A0 /* Foundation.framework */; };
 		07ED175015330DF000E4C9A0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07ED174F15330DF000E4C9A0 /* CoreGraphics.framework */; };
@@ -42,7 +42,7 @@
 		07ED17CA15331A8500E4C9A0 /* LogRunControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07ED17C915331A8500E4C9A0 /* LogRunControllerSpec.m */; };
 		07ED17CC1533544100E4C9A0 /* LogRunController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07ED176415330DF000E4C9A0 /* LogRunController.m */; };
 		07FE1C5E15578D72003C853C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07ED175B15330DF000E4C9A0 /* AppDelegate.m */; };
-		07FE1C6015580456003C853C /* AddLogView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07FE1C5F15580456003C853C /* AddLogView.xib */; };
+		07FE1C6015580456003C853C /* LogRunView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07FE1C5F15580456003C853C /* LogRunView.xib */; };
 		07FE1C62155804A2003C853C /* ListRunsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07FE1C61155804A2003C853C /* ListRunsView.xib */; };
 		07FE1C6615580F65003C853C /* AppDelegateSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FE1C6515580F65003C853C /* AppDelegateSpec.m */; };
 /* End PBXBuildFile section */
@@ -108,7 +108,7 @@
 		07ED17AB15330DFE00E4C9A0 /* RunIPhoneUnitTest.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = RunIPhoneUnitTest.sh; path = OCDSpec/OCDSpec/Programs/RunIPhoneUnitTest.sh; sourceTree = "<group>"; };
 		07ED17AD15330DFE00E4C9A0 /* iPhone-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "iPhone-Prefix.pch"; path = "OCDSpec/OCDSpec/iPhone-Prefix.pch"; sourceTree = "<group>"; };
 		07ED17C915331A8500E4C9A0 /* LogRunControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogRunControllerSpec.m; sourceTree = "<group>"; };
-		07FE1C5F15580456003C853C /* AddLogView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddLogView.xib; sourceTree = "<group>"; };
+		07FE1C5F15580456003C853C /* LogRunView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogRunView.xib; sourceTree = "<group>"; };
 		07FE1C61155804A2003C853C /* ListRunsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListRunsView.xib; sourceTree = "<group>"; };
 		07FE1C6515580F65003C853C /* AppDelegateSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegateSpec.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -182,7 +182,7 @@
 				07ED176D15330DF000E4C9A0 /* second.png */,
 				07ED176F15330DF000E4C9A0 /* second@2x.png */,
 				07ED175215330DF000E4C9A0 /* Supporting Files */,
-				07FE1C5F15580456003C853C /* AddLogView.xib */,
+				07FE1C5F15580456003C853C /* LogRunView.xib */,
 				07FE1C61155804A2003C853C /* ListRunsView.xib */,
 			);
 			path = runningLog;
@@ -354,7 +354,7 @@
 				07ED176915330DF000E4C9A0 /* first@2x.png in Resources */,
 				07ED176E15330DF000E4C9A0 /* second.png in Resources */,
 				07ED177015330DF000E4C9A0 /* second@2x.png in Resources */,
-				07FE1C6015580456003C853C /* AddLogView.xib in Resources */,
+				07FE1C6015580456003C853C /* LogRunView.xib in Resources */,
 				07FE1C62155804A2003C853C /* ListRunsView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,7 +366,7 @@
 				07ED17AC15330DFE00E4C9A0 /* RunIPhoneUnitTest.sh in Resources */,
 				07ED17AE15330DFE00E4C9A0 /* iPhone-Prefix.pch in Resources */,
 				07ED17B4153316D100E4C9A0 /* MainStoryboard_iPhone.storyboard in Resources */,
-				077F00C815594EF500C7CCC4 /* AddLogView.xib in Resources */,
+				077F00C815594EF500C7CCC4 /* LogRunView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
