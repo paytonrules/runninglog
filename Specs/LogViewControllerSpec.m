@@ -1,4 +1,4 @@
-#import "LogViewController.h"
+#import "LogRunController.h"
 #import "OCDSpec/OCDSpec.h"
 
 @interface TestUITextField : UITextField
@@ -37,12 +37,12 @@
 @end
 
 CONTEXT(LogViewController) {
-  __block LogViewController *cont;
+  __block LogRunController *cont;
 
   describe(@"storeLogEntry",
 
           beforeEach(^{
-            cont = [[LogViewController alloc] init];
+            cont = [[LogRunController alloc] init];
             cont.logEntry = [[TestUITextField alloc] init];
             [cont viewDidLoad];
           }),

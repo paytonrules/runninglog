@@ -1,10 +1,10 @@
-#import "LogViewController.h"
+#import "LogRunController.h"
 
-@interface LogViewController ()
+@interface LogRunController ()
 
 @end
 
-@implementation LogViewController   
+@implementation LogRunController   
 @synthesize logEntry;
 
 -(void) viewDidLoad
