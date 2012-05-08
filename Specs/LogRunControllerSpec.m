@@ -36,7 +36,7 @@
 }
 @end
 
-CONTEXT(LogViewController) {
+CONTEXT(LogRunController) {
   __block LogRunController *cont;
 
   describe(@"storeLogEntry",
