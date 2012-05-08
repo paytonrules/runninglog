@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "LogViewController.h"
 
 @implementation AppDelegate
 
@@ -14,7 +15,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    UITabBarController *myTabBarController = (UITabBarController *)_window.rootViewController;
+    LogViewController *logViewController = [[LogViewController alloc] initWithNibName:@"AddLogView" bundle:nil];
+
+    myTabBarController.viewControllers = [NSArray arrayWithObjects:logViewController, nil];
+    
+   
     return YES;
 }
 							

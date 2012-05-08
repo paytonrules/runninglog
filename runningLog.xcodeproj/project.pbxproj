@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		077F00C815594EF500C7CCC4 /* AddLogView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07FE1C5F15580456003C853C /* AddLogView.xib */; };
 		07ED174C15330DF000E4C9A0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07ED174B15330DF000E4C9A0 /* UIKit.framework */; };
 		07ED174E15330DF000E4C9A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07ED174D15330DF000E4C9A0 /* Foundation.framework */; };
 		07ED175015330DF000E4C9A0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07ED174F15330DF000E4C9A0 /* CoreGraphics.framework */; };
@@ -43,6 +44,7 @@
 		07FE1C5E15578D72003C853C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07ED175B15330DF000E4C9A0 /* AppDelegate.m */; };
 		07FE1C6015580456003C853C /* AddLogView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07FE1C5F15580456003C853C /* AddLogView.xib */; };
 		07FE1C62155804A2003C853C /* ListRunsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07FE1C61155804A2003C853C /* ListRunsView.xib */; };
+		07FE1C6615580F65003C853C /* AppDelegateSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FE1C6515580F65003C853C /* AppDelegateSpec.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +110,7 @@
 		07ED17C915331A8500E4C9A0 /* LogViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogViewControllerSpec.m; sourceTree = "<group>"; };
 		07FE1C5F15580456003C853C /* AddLogView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddLogView.xib; sourceTree = "<group>"; };
 		07FE1C61155804A2003C853C /* ListRunsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListRunsView.xib; sourceTree = "<group>"; };
+		07FE1C6515580F65003C853C /* AppDelegateSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegateSpec.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +204,7 @@
 			children = (
 				07ED17C915331A8500E4C9A0 /* LogViewControllerSpec.m */,
 				07ED178115330DFD00E4C9A0 /* OCDSpec */,
+				07FE1C6515580F65003C853C /* AppDelegateSpec.m */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
@@ -362,6 +366,7 @@
 				07ED17AC15330DFE00E4C9A0 /* RunIPhoneUnitTest.sh in Resources */,
 				07ED17AE15330DFE00E4C9A0 /* iPhone-Prefix.pch in Resources */,
 				07ED17B4153316D100E4C9A0 /* MainStoryboard_iPhone.storyboard in Resources */,
+				077F00C815594EF500C7CCC4 /* AddLogView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +418,7 @@
 				07ED17CA15331A8500E4C9A0 /* LogViewControllerSpec.m in Sources */,
 				07ED17CC1533544100E4C9A0 /* LogViewController.m in Sources */,
 				07FE1C5E15578D72003C853C /* AppDelegate.m in Sources */,
+				07FE1C6615580F65003C853C /* AppDelegateSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,6 +543,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				HEADER_SEARCH_PATHS = "${SOURCE_ROOT}/${TARGET_NAME}/OCDSpec";
 				INFOPLIST_FILE = "";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -553,6 +560,7 @@
 				GCC_PREFIX_HEADER = "${TARGET_NAME}/OCDSpec/OCDSpec/iPhone-Prefix.pch";
 				HEADER_SEARCH_PATHS = "${SOURCE_ROOT}/${TARGET_NAME}/OCDSpec";
 				INFOPLIST_FILE = "";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
