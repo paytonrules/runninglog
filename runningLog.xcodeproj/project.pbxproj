@@ -21,7 +21,6 @@
 		07ED176515330DF000E4C9A0 /* LogRunController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07ED176415330DF000E4C9A0 /* LogRunController.m */; };
 		07ED176715330DF000E4C9A0 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 07ED176615330DF000E4C9A0 /* first.png */; };
 		07ED176915330DF000E4C9A0 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07ED176815330DF000E4C9A0 /* first@2x.png */; };
-		07ED176C15330DF000E4C9A0 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07ED176B15330DF000E4C9A0 /* SecondViewController.m */; };
 		07ED176E15330DF000E4C9A0 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 07ED176D15330DF000E4C9A0 /* second.png */; };
 		07ED177015330DF000E4C9A0 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07ED176F15330DF000E4C9A0 /* second@2x.png */; };
 		07ED177D15330DFD00E4C9A0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07ED174B15330DF000E4C9A0 /* UIKit.framework */; };
@@ -78,8 +77,6 @@
 		07ED176415330DF000E4C9A0 /* LogRunController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogRunController.m; sourceTree = "<group>"; };
 		07ED176615330DF000E4C9A0 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		07ED176815330DF000E4C9A0 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		07ED176A15330DF000E4C9A0 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		07ED176B15330DF000E4C9A0 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		07ED176D15330DF000E4C9A0 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		07ED176F15330DF000E4C9A0 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		07ED177B15330DFD00E4C9A0 /* Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Specs.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -181,8 +178,6 @@
 				07ED176415330DF000E4C9A0 /* LogRunController.m */,
 				07ED176615330DF000E4C9A0 /* first.png */,
 				07ED176815330DF000E4C9A0 /* first@2x.png */,
-				07ED176A15330DF000E4C9A0 /* SecondViewController.h */,
-				07ED176B15330DF000E4C9A0 /* SecondViewController.m */,
 				07ED176D15330DF000E4C9A0 /* second.png */,
 				07ED176F15330DF000E4C9A0 /* second@2x.png */,
 				07ED175215330DF000E4C9A0 /* Supporting Files */,
@@ -402,7 +397,6 @@
 				07ED175815330DF000E4C9A0 /* main.m in Sources */,
 				07ED175C15330DF000E4C9A0 /* AppDelegate.m in Sources */,
 				07ED176515330DF000E4C9A0 /* LogRunController.m in Sources */,
-				07ED176C15330DF000E4C9A0 /* SecondViewController.m in Sources */,
 				077F00CB1559E45000C7CCC4 /* ListRunsController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
