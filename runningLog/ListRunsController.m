@@ -1,11 +1,3 @@
-//
-//  ListRunsController.m
-//  runningLog
-//
-//  Created by Eric Smith on 5/8/12.
-//  Copyright (c) 2012 8th Light. All rights reserved.
-//
-
 #import "ListRunsController.h"
 
 @interface ListRunsController ()
@@ -14,30 +6,34 @@
 
 @implementation ListRunsController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+-(id) initWithNibName:(NSString *)nibNameOrNil interactor:(NSObject<LogRunInteractor> *)newInteractor
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
+    if ((self = [super initWithNibName:nibNameOrNil bundle:nil]))
+    {
+        interactor = newInteractor;
     }
     return self;
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view.
-}
-
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-}
-
+// Kinda hate generated code. 
+// Okay don't "kinda"
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+-(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return interactor.logEntries;
+}
+ 
+-(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"LogEntry"];
+    NSString *logEntry = [interactor getLogAt:indexPath.row - 1];
+    cell.textLabel.text = logEntry;
+
+    return cell;
 }
 
 @end

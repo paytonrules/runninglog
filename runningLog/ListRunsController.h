@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LogRunInteractor.h"
 
-@interface ListRunsController : UIViewController
+@interface ListRunsController : UIViewController<UITableViewDataSource>
+{
+    NSObject<LogRunInteractor> *interactor;
+}
 
+-(id) initWithNibName:(NSString *)nibNameOrNil interactor:(NSObject<LogRunInteractor> *)interactor;
 @end

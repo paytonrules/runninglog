@@ -33,7 +33,6 @@ CONTEXT(AppDelegate)
                     ListRunsController *cont = [tabController.viewControllers objectAtIndex:1];
                     
                     [expect(cont.nibName) toBeEqualTo:@"ListRunsView"];    
-                    
                 }),
              
              

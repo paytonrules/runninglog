@@ -7,9 +7,10 @@
 @implementation LogRunController   
 @synthesize logEntry;
 
--(void) viewDidLoad
+-(id) initWithNibName:(NSString *)nibNameOrNil andInteractor:(NSObject<LogRunInteractor> *)newInteractor
 {
-  logEntries = [NSMutableArray array];
+    interactor = newInteractor;
+    return [self initWithNibName:nibNameOrNil bundle:nil];
 }
 
 -(BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -26,25 +27,13 @@
 
 -(IBAction) addLog
 {
-  [logEntries addObject:logEntry.text];
+  [interactor log:logEntry.text];
 }
 
 -(BOOL) textFieldShouldReturn:(UITextField *)logEntryField
 {
   [logEntryField resignFirstResponder];
   return YES;
-}
-
--(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-  return logEntries.count;
-}
-
--(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-  UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"LogEntry"];
-  cell.textLabel.text = [logEntries objectAtIndex:indexPath.row];
-  return cell;
 }
 
 
